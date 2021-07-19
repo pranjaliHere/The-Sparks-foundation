@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<title> The Sparks Foundation</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+<body class="w3-light-grey">
+
+<div class="w3-bar w3-grey w3-margin-left w3z w3-padding-large w3-large w3-right ">
+  <a href="#" class="w3-button w3-circle "><i class="fa fa-phone"></i></a>
+  <a href="#" class="w3-button w3-circle "><i class="fa fa-facebook-official"></i></a>
+  <a href="https://instagram.com/_realpranjaliii_?utm_medium=copy_link" class="w3-button w3-circle "><i class="fa fa-instagram"></i></a>
+  <a href="https://twitter.com/pranjali_prisha" class="w3-button w3-circle "><i class="fa fa-twitter"></i></a>
+  <a href="https://www.linkedin.com/in/pranjali-prisha-5b70591b7/" class="w3-button w3-circle"><i class="fa fa-linkedin"></i></a>
+</div>
+  
+
+<div class="w3-content" style="max-width:1600px">
+
+  
+  <header class="w3-container w3-center w3-padding-40 w3-indigo w3-text-yellow  ">
+    <h1 class="w3-xxxlarge"><b>MAKE LIFE WORTH</b></h1>
+  </header>
+
+ 
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="https://cdn.givind.org/static/images/campaign/EldersLivesMatter-cta-image.jpg" alt="Fashion Blog" width="1600" height="500">
+    <div class="w3-display-topleft w3-padding-small">
+      <h1 class="w3-jumbo w3-text-lemon w3-yellow w3-padding-hide-small "><b>OUR ELDERS <br>NEED HELPERS...</b></h1>
+      <h6><button onclick="onButtonClick()" class="w3-button w3-pale-yellow w3-padding-large w3-xxxlarge w3-opacity w3-hover-opacity-on">Donate</button></h6>
+    </div>
+  </header>
+
+  <div class="w3-row w3-padding w3-border">
+
+    
+ 
+
+     
+        <div class="w3-container w3-yellow w3-margin w3-padding-small">
+          <div class="w3-centre">
+            <h1>AIM</h1>
+          </div>
+  
+          <div class="w3-justify w3-Georgia ">
+             <p> <h4>India tries to stay afloat amidst the ‘second wave’ of the pandemic, our poor and vulnerable elders face the highest risk.
+                Countless have lost their lives and much more have lost their earning men of the house. This organisation aims to provide 
+                basic ration relief and essential items to these families who are striving hard to survive in this critical situation.<br><br>
+                Based on some on-ground survey, below are mentioned the commodities on which the donated funds would be utilised :-<br><br>
+<b>SURVIVAL KITS</b> includes items like rice,wheat, spices, cooking oil, soap, detergent along with Immunity boosters such 
+as Zincovit, Vitamin C and some high quality reusable face masks.</h4><br></p>
+             
+<h2 >The need on-ground is immense. Your little contribution can help an elder survive longer and bring hope during this 
+uncertain time. </h2>
+
+                </p>
+                
+            </div>
+          </div>
+        </div>
+        <header class="w3-display-container w3-wide" id="home">
+          <div class="w3-display-right w3-padding-large">
+            
+            <h6><button onclick="onButtonClick()" class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off">Donate</button></h6>
+          </div>
+        
+                 
+<footer class="w3-container w3-blue" style="padding:16px">
+  <a href="#" class="w3-button w3-text-grey w3-khaki w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+
+
+
+<script src="https://js.instamojo.com/v1/checkout.js"></script>
+<script>
+    /* Start client-defined Callback Handler Functions */
+  function onOpenHandler () {
+    alert('Payments Modal is Opened');
+  }
+
+  function onCloseHandler () {
+    alert('Payments Modal is Closed');
+  }
+
+  function onPaymentSuccessHandler (response) {
+    alert('Payment Success');
+    console.log('Payment Success Response', response);
+  }
+
+  function onPaymentFailureHandler (response) {
+    alert('Payment Failure');
+    console.log('Payment Failure Response', response);
+  }
+  /* End client-defined Callback Handler Functions */
+
+  /* Configuring Handlers */
+  Instamojo.configure({
+    handlers: {
+      onOpen: onOpenHandler,
+      onClose: onCloseHandler,
+      onSuccess: onPaymentSuccessHandler,
+      onFailure: onPaymentFailureHandler
+    }
+  });
+  function onButtonClick() {
+    Instamojo.open('https://test.instamojo.com/@pranjalisha0604/');
+  }
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "&#10003; Liked";
+}
+</script>
+
+</body>
+</html>
